@@ -20,7 +20,7 @@ observer.observe(target, {
 // 2:対象が複数のとき（一覧ページなど）--------------------------------------------------
 // 監視ターゲットの取得
 var target = document.querySelectorAll('');
-for (let i = 0; i < target.length; i++) {
+for (var i = 0; i < target.length; i++) {
   // オブザーバーインスタンスの作成
   var observer = new MutationObserver(records => {
     records.forEach((record) => {
